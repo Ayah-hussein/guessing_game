@@ -1,4 +1,5 @@
 'usestrict';
+
 let userName= prompt('hello ... let me know your name please ^_^');
 alert('Welcome ' + userName);
 
@@ -31,7 +32,7 @@ else {
 
 let eyeColor= prompt('Do you think Ive got a blue eyes ? yes / no ');
 //console.log('Your answer is:' + userName);
-if (eyeColor === 'yes' && eyeColor.toUpperCase() === 'YES'){
+if (eyeColor === 'yes' || eyeColor.toUpperCase() === 'YES'){
   alert('ohh thats not true .. '); 
 }
 else {
@@ -40,7 +41,7 @@ else {
 
 let snowStop = prompt('If it will be snowing for a month, do you think I will stay a home until it stopped ? yes / no ');
 //console.log('Your answer is:' + userName);
-if ( snowStop === 'yes' snowStop.toUpperCase() === 'YES') {
+if ( snowStop === 'yes' || snowStop.toUpperCase() === 'YES') {
   alert('yeaaah thats right *_* '); 
 }
 else {
