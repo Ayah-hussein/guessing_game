@@ -1,5 +1,5 @@
 'usestrict';
-
+console.log('hellos');
 let userName= prompt('hello ... let me know your name please ^_^');
 alert('Welcome ' + userName);
 
