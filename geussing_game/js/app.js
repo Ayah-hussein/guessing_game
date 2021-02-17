@@ -2,8 +2,15 @@
 let score = 0 ;
 
 console.log('hellos');
+//let userName= prompt('hello ... let me know your name please ^_^');
+//alert('Welcome ' + userName);
 let userName= prompt('hello ... let me know your name please ^_^');
-alert('Welcome ' + userName);
+const user= function(name){
+  console.log('Welcome ' + userName);
+return('Welcome ' + userName);
+
+}
+alert((user('Welcome ' + userName)));
 
 let myName= prompt('Do you know what is my name ? yes / no ');
 //console.log('Your answer is:' + userName);
