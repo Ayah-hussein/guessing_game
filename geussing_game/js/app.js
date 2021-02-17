@@ -115,5 +115,5 @@ for (let h=1 ; h <= 6; h++ ) {
 
 alert('your score is --->' + score +' / 7 ' );
 
-
+// this is for trial
 
