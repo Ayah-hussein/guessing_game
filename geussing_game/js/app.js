@@ -14,7 +14,11 @@ alert((user('Welcome ' + userName)));
 
 let myName= prompt('Do you know what is my name ? yes / no ');
 //console.log('Your answer is:' + userName);
-if (myName === 'yes' && myName.toLowerCase() === 'yes' )
+const founder= function(myName){
+  return(myName.toLowerCase);
+}
+console.log(founder(myName));
+if (founder(myName) === 'yes' && founder(myName) === 'y' )
 {
   alert('wooow so you know my name ' );
   score = score +1;
@@ -25,7 +29,10 @@ else {
 
 let favSeason= prompt('Do you know what is my favourite season ? yes / no ');
 //console.log('Your answer is:' + userName);
-if (favSeason === 'yes' && favSeason.toLowerCase() === 'yes') {
+const season= function(favSeason){
+  return(favSeason.toLowerCase);
+}
+if (season(favSeason) === 'yes' && Season(favSeason) === 'y') {
   alert('Good so you know my favourite season ');
   score = score +1;
 }
@@ -35,7 +42,11 @@ else {
 
 let favColor= prompt('Do you know what is my favourite color ? yes / no ');
 //console.log('Your answer is:' + userName);
-if (favColor === 'yes' && favColor.toLowerCase() === 'yes'){
+const color= function(favColor){
+  return(favColor.toLowerCase);
+}
+console.log(color(favColor));
+if (color(favColor) === 'yes' && Color(favColor) === 'y'){
   alert('amazing ! ');
   score = score +1;
 }
@@ -44,8 +55,12 @@ else {
 }
 
 let eyeColor= prompt('Do you think Ive got a blue eyes ? yes / no ');
+const eye= function(eyeColor){
+  return(eyeColor.toLowerCase);
+}
+console.log(eye(eyeColor));
 //console.log('Your answer is:' + userName);
-if (eyeColor === 'yes' || eyeColor.toUpperCase() === 'YES'){
+if (eye(eyeColor) === 'yes' || eye(eyeColor) === 'y'){
   alert('ohh thats not true .. '); 
 }
 else {
@@ -54,8 +69,12 @@ else {
 }
 
 let snowStop = prompt('If it will be snowing for a month, do you think I will stay a home until it stopped ? yes / no ');
+const weather= function(snowStop){
+  return(snowStop.toLowerCase);
+}
+console.log(weather(snowStop));
 //console.log('Your answer is:' + userName);
-if ( snowStop === 'yes' || snowStop.toUpperCase() === 'YES') {
+if ( weather(snowStop) === 'yes' || weather(snowStop) === 'y') {
   alert('yeaaah thats right *_* '); 
   score = score +1;
 }
@@ -68,13 +87,16 @@ for ( let i=1; i <= 4 ; i++ )
 {
   myAge = prompt('Guess Whats my age ? ');
   console.log('your answer is: '+ myAge);
-  if (myAge < 28) {
+  const age= function(myAge){
+    return(Number(myAge));
+  }
+  if (age(myAge) < 28) {
     alert('thats too low');
     if (i ===4 ){
       alert('you lose your attempts and the correct answer is 28');
     }
   }
-  else if (myAge > 28) { 
+  else if (age(myAge) > 28) { 
     alert('thats too high ');
     if (i ===4 ){
       alert('you lose your attempts and the correct answer is 28');
@@ -94,8 +116,11 @@ let corrAns= false;
 for (let h=1 ; h <= 6; h++ ) {
   inpNum= prompt('Guess whats my favourite number : guess a number between 0-9');
   console.log(inpNum);
+  const inputNumber= function(inputNum){
+    return(Number(inputNum));
+  }
   for (let j=0; j< favNum.length ; j++){
-    if (inpNum === favNum[j]) {
+    if (inputNumber(inpNum) === favNum[j]) {
 
       alert('your answer is correct ');
       corrAns= true;
